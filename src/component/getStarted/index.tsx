@@ -81,7 +81,7 @@ const GetStarted = () => {
 
         <div className="w-full money-card lg:py-[30px]">
           <div className="lg:w-9/12  lg:mx-auto h-full">
-            <div className="w-full flex lg:h-[400px] gap-[10px]  mb-5">
+            <div className="w-full flex lg:h-[400px] gap-[10px] border-4  mb-5">
               <div className=" w-[40%] ">
                 <img
                   src={helper.MoneyImg}
@@ -111,7 +111,7 @@ const GetStarted = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex lg:h-[400px] gap-[10px] ">
+            <div className="w-full flex lg:h-[400px] border-4 gap-[10px] ">
               <div className=" w-[60%] relative ">
                 <img
                   src={helper.PoundSign}
