@@ -93,7 +93,7 @@ const GetStarted = () => {
                 <img
                   src={helper.DollarSign}
                   alt="some random pictures of finexa"
-                  className="h-full object-contain w-full"
+                  className="h-full object-cover w-full"
                 />
                 <div className="absolute top-0 px-[10px] h-full w-full  flex justify-end items-center">
                   <div className="w-6/12 ">
@@ -116,10 +116,9 @@ const GetStarted = () => {
                 <img
                   src={helper.PoundSign}
                   alt="some random pictures of finexa"
-                  className="h-full object-contain w-full"
+                  className="h-full object-cover w-full"
                 />
                 <div className="absolute top-0 px-[10px] h-full w-full  flex justify-end items-center">
-                  <img src="" alt="" />
                   <div className="w-6/12 ">
                     <h4 className="font-[700] text-[20px] text-[#FCF7FC] mb-2 lg:leading-[26px]">
                       Connecting You with the Best Financial Tools
