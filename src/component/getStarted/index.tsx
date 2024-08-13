@@ -78,22 +78,24 @@ const GetStarted = () => {
             </div>
           </div>
         </div>
+        {/* create account cards end */}
+
 
         <div className="w-full money-card lg:py-[30px]">
           <div className="lg:w-9/12  lg:mx-auto h-full">
-            <div className="w-full flex lg:h-[400px] gap-[10px] border-4  mb-5">
+            <div className="w-full flex lg:h-[400px] gap-[10px]  mb-5">
               <div className=" w-[40%] ">
                 <img
                   src={helper.MoneyImg}
                   alt="some random pictures of finexa"
-                  className="h-full object-cover w-full"
+                  className="h-full object-cover w-full rounded-[20px]"
                 />
               </div>
               <div className=" w-[60%] relative">
                 <img
                   src={helper.DollarSign}
                   alt="some random pictures of finexa"
-                  className="h-full object-cover w-full"
+                  className="h-full object-cover w- rounded-[20px]"
                 />
                 <div className="absolute top-0 px-[10px] h-full w-full  flex justify-end items-center">
                   <div className="w-6/12 ">
@@ -111,12 +113,12 @@ const GetStarted = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex lg:h-[400px] border-4 gap-[10px] ">
+            <div className="w-full flex lg:h-[400px]  gap-[10px] ">
               <div className=" w-[60%] relative ">
                 <img
                   src={helper.PoundSign}
                   alt="some random pictures of finexa"
-                  className="h-full object-cover w-full"
+                  className="h-full object-cover w-full rounded-[20px]"
                 />
                 <div className="absolute top-0 px-[10px] h-full w-full  flex justify-end items-center">
                   <div className="w-6/12 ">
@@ -137,7 +139,7 @@ const GetStarted = () => {
                 <img
                   src={helper.SmilingMan}
                   alt="some random pictures of finexa"
-                  className="h-full object-cover w-full"
+                  className="h-full object-cover w-full rounded-[20px]"
                 />
               </div>
             </div>
