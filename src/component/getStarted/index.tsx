@@ -145,6 +145,27 @@ const GetStarted = () => {
             </div>
           </div>
         </div>
+
+        {/* Testimonial component */}
+        <div>
+
+        </div>
+        {/* Testimonial component */}
+
+        <div className="bg-[#7838884D] px-[20px] w-full h-[50vh]">
+          <div className="w-10/12 lg:mx-auto flex  py-[] h-full items-center">
+          <div className="lg:w-[60%] ">
+            <h3 className="font-[700] text-[26px] text-[#FCF7FC] leading-[40px] ">Connect your account in one click</h3>
+            <p className="paragraph">follow these steps to get strated</p>
+            <button className="bg-[#783888] border border-[#83578E] rounded-[20px] w-[137px] h-[45px] text-[#FFFFFF] text-[16px] flex justify-center items-center mt-4 ">Start Now</button>
+          </div>
+          <div className="h-4/5   lg:w-[40%]">
+            <img src={helper.baloon} alt="finexa balloon" className="h-full w-full  object-contain" />
+          </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
   );

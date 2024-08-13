@@ -10,3 +10,7 @@ h1,h2,h3,h4,h5,h6{
   p,li{
     font-family: "Inter", sans-serif;
   }
+
+  .paragraph{
+    @apply lg:font-[400] text-[#FCF7FC] lg:text-[20px] lg:leading-[24.2px];
+  }

@@ -14,8 +14,10 @@ import {default as DollarSign} from "../assets/dollar-sign.svg"
 import {default as SmilingMan} from "../assets/smiling-man.svg"
 import {default as Money1} from "../assets/money-1.svg"
 import {default as Money2} from "../assets/money-2.svg"
+import {default as baloon} from "../assets/baloon.svg"
 
 export default {
+    baloon,
     Money1,
     Money2,
     SmilingMan,
