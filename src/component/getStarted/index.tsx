@@ -102,7 +102,7 @@ const GetStarted = () => {
                     <h4 className="font-[700] text-[20px] text-[#FCF7FC] mb-2 lg:leading-[26px]">
                       Simplifying Financial Management
                     </h4>
-                    <p className="text-[#FCF7FC] text-[16px] font-[400]">
+                    <p className="text-[red] text-[16px] font-[400]">
                       Streamline your financial tasks with our innovative
                       solutions designed for convenience.
                     </p>
@@ -113,7 +113,7 @@ const GetStarted = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex lg:h-[400px]  gap-[10px] ">
+            <div className="w-full flex lg:h-[400px] gap-[10px] ">
               <div className=" w-[60%] relative ">
                 <img
                   src={helper.PoundSign}
