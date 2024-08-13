@@ -95,14 +95,14 @@ const GetStarted = () => {
                 <img
                   src={helper.DollarSign}
                   alt="some random pictures of finexa"
-                  className="h-full object-cover w- rounded-[20px]"
+                  className="h-full object-cover w-full rounded-[20px]"
                 />
                 <div className="absolute top-0 px-[10px] h-full w-full  flex justify-end items-center">
                   <div className="w-6/12 ">
                     <h4 className="font-[700] text-[20px] text-[#FCF7FC] mb-2 lg:leading-[26px]">
                       Simplifying Financial Management
                     </h4>
-                    <p className="text-[red] text-[16px] font-[400]">
+                    <p className="text-[#FCF7FC] text-[16px] font-[400]">
                       Streamline your financial tasks with our innovative
                       solutions designed for convenience.
                     </p>
