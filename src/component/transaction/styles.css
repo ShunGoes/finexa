@@ -1,0 +1,7 @@
+.transaction{
+    background-image: linear-gradient(to right,  #783888, #F7A237
+    );
+}
+.transaction-bg{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.8))
+}

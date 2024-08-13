@@ -1,0 +1,8 @@
+.header{
+    background-image: linear-gradient(to right,  #783888, #F7A237
+    );
+    /* background-size: cover; */
+}
+.header-bg{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7))
+}
