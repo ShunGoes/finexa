@@ -15,8 +15,14 @@ import {default as SmilingMan} from "../assets/smiling-man.svg"
 import {default as Money1} from "../assets/money-1.svg"
 import {default as Money2} from "../assets/money-2.svg"
 import {default as baloon} from "../assets/baloon.svg"
+import {default as Testimonial1} from "../assets/testimonial-1.svg"
+import {default as ColouredArrowLeft} from "../assets/colored-arrow-left.svg"
+import {default as ColouredArrowRight} from "../assets/colored-arrow-right.svg"
 
 export default {
+    ColouredArrowRight,
+    ColouredArrowLeft,
+    Testimonial1,
     baloon,
     Money1,
     Money2,

@@ -1,4 +1,5 @@
 import helper from "../../helper/helper";
+import Testimonial from "../testimoniaal";
 import "./styles.css";
 
 const GetStarted = () => {
@@ -147,11 +148,12 @@ const GetStarted = () => {
         </div>
 
         {/* Testimonial component */}
-        <div>
-
+        <div className="w-full">
+          <Testimonial />
         </div>
         {/* Testimonial component */}
 
+        {/* connect with us section */}
         <div className="bg-[#7838884D] px-[20px] w-full h-[50vh]">
           <div className="w-10/12 lg:mx-auto flex  py-[] h-full items-center">
           <div className="lg:w-[60%] ">
