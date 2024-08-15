@@ -23,7 +23,7 @@ const Testimonial = () => {
 
   return (
     <section className=" w-full relative  flex flex-col justify-center  items-center">
-      <h2 className="heading-2 text-[#FCF7FC] text-center w-10/12 mb-[20px] lg:mb-[30px]"
+      <h2 className="heading-2 text-[#FCF7FC] text-center mt-[30px] lg:mt-0 w-10/12 mb-[20px] lg:mb-[30px]"
       >
           What Our Customers Love About Finexa
       </h2>
@@ -38,7 +38,7 @@ const Testimonial = () => {
         loop={true}
         spaceBetween={50}
         slidesPerView={1}
-        className="lg:w-8/12 w-10/12  "
+        className="lg:w-8/12 w-11/12  "
       >
         {TestimonialData.map((testament: iTestimony) => {
           return (
@@ -65,16 +65,17 @@ const Testimonial = () => {
         ...
         <SwiperButtons prevBtnRef={prevBtnRef} nextBtnRef={nextBtnRef} />
       </Swiper>
-      <div className=" w-full absolute top-0 h-full flex items-center justify-center">
-        <div className="flex justify-between w-10/12">
-          <div onClick={prevSlide} className="h-[40px] w-[40px] ">
+
+      <div className=" w-full mt-[20px] mb-[40px] lg:mb-0 lg:mt-0 lg:absolute lg:top-0 h-full flex items-center justify-center ">
+        <div className="flex justify-center gap-[50px] lg:gap-0 lg:justify-between w-10/12 ">
+          <div onClick={prevSlide} className="h-[60px] w-[60px] lg:h-[40px] lg:w-[40px]  ">
             <img
               src={helper.ColouredArrowLeft}
               alt=" button previous testimonial"
               className="w-full h-full object-cover"
             />
           </div>
-          <div onClick={nextSlide} className="h-[40px] w-[40px] ">
+          <div onClick={nextSlide} className="h-[60px] w-[60px] lg:h-[40px] lg:w-[40px]  ">
             <img
               src={helper.ColouredArrowRight}
               alt=" button previous testimonial"
