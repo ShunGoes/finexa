@@ -3,10 +3,12 @@ import "./styles.css"
 
 const Transaction = () => {
   return (
+
     <div className="transaction  ">
+      
       <div className="transaction-bg h-full lg:py-[70px]">
         <div className=" flex flex-col items-center ">
-          <h2 className="font-[700] text-[#FCF7FC] lg:text-[50px] lg:leading-[70px]">
+          <h2 className="font-[700] text-[#FCF7FC] text-[26px] lg:text-[50px] leading-[30px] lg:leading-[70px]">
           Borderless Transactions
           </h2>
          <div className="flex gap-4 ">

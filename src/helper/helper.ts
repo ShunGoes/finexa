@@ -18,8 +18,10 @@ import {default as baloon} from "../assets/baloon.svg"
 import {default as Testimonial1} from "../assets/testimonial-1.svg"
 import {default as ColouredArrowLeft} from "../assets/colored-arrow-left.svg"
 import {default as ColouredArrowRight} from "../assets/colored-arrow-right.svg"
+import {default as Hamburger} from "../assets/hamburger.svg"
 
 export default {
+    Hamburger,
     ColouredArrowRight,
     ColouredArrowLeft,
     Testimonial1,
