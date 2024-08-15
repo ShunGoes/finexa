@@ -19,8 +19,10 @@ import {default as Testimonial1} from "../assets/testimonial-1.svg"
 import {default as ColouredArrowLeft} from "../assets/colored-arrow-left.svg"
 import {default as ColouredArrowRight} from "../assets/colored-arrow-right.svg"
 import {default as Hamburger} from "../assets/hamburger.svg"
+import {default as SMAuthourization} from "../assets/sm-authorization.svg"
 
 export default {
+    SMAuthourization,
     Hamburger,
     ColouredArrowRight,
     ColouredArrowLeft,

@@ -11,6 +11,12 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Inter", sans-serif;
   }
 
+  .heading-2{
+    @apply font-[700]  text-[26px] lg:text-[50px] leading-[30px] lg:leading-[70px]
+  }
+  .heading-3{
+    @apply mb-2 lg:mb-0 font-[700] text-[24px] lg:text-[30px] leading-[30px] lg:leading-[70px]
+  }
   .paragraph{
-    @apply lg:font-[400] text-[#FCF7FC] lg:text-[20px] lg:leading-[24.2px];
+    @apply font-[400] text-[16px] lg:text-[20px] leading-[22px];
   }

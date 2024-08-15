@@ -4,21 +4,21 @@ import "./styles.css"
 const Transaction = () => {
   return (
 
-    <div className="transaction  ">
+    <div className="transaction  h-auto">
       
       <div className="transaction-bg h-full lg:py-[70px]">
-        <div className=" flex flex-col items-center ">
-          <h2 className="font-[700] text-[#FCF7FC] text-[26px] lg:text-[50px] leading-[30px] lg:leading-[70px]">
+        <div className=" flex flex-col items-center py-[40px] lg:py-0">
+          <h2 className="heading-2 text-[#FCF7FC] mb-2 lg:mb-0">
           Borderless Transactions
           </h2>
-         <div className="flex gap-4 ">
-          <img src={helper.ArrowRight} alt="arrow right" />
-          <h2 className="font-[700] text-[#D44DF5] lg:text-[50px] lg:leading-[70px]">
+         <div className="flex gap-4 items-center ">
+          <img src={helper.ArrowRight} alt="arrow right" className="h-[30px] lg:h-auto" />
+          <h2 className="heading-2 text-[#D44DF5] ">
             Go Global
           </h2>
-          <img src={helper.GlobalIcon} alt="finexa " />
+          <img src={helper.GlobalIcon} alt="finexa " className="h-[30px] lg:h-auto"/>
          </div>
-         <div className="mt-[40px]">
+         <div className="mt-[40px] w-10/12 lg:w-auto">
           <img src={helper.MobileApp} alt="finexa mobile app" className="lg:h-[600px]" />
          </div>
         </div>

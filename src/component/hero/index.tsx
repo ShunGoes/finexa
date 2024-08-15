@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Hero = () => {
   return (
-    <header className=" header h-auto">
+    <header className=" header h-auto ">
       <div className="header-bg  flex flex-col justify- ">
         <Navbar />
         <div className="w-full lg:mt-[50px] mt-[2rem] ">
@@ -22,7 +22,7 @@ const Hero = () => {
               <img src={helper.GooglePlay} alt="google play store icon" className="h-full" />
             </div>
             <div className="h-[120px] lg:h-auto">
-              <img src={helper.PayCards} alt="pay cards" />
+              <img src={helper.PayCards} alt="pay cards"  className="h-full "/>
             </div>
           </div>
         </div>

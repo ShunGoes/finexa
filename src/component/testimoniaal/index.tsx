@@ -22,7 +22,11 @@ const Testimonial = () => {
   }
 
   return (
-    <section className=" w-full relative  flex items-center ">
+    <section className=" w-full relative  flex flex-col justify-center  items-center">
+      <h2 className="heading-2 text-[#FCF7FC] text-center w-10/12 mb-[20px] lg:mb-[30px]"
+      >
+          What Our Customers Love About Finexa
+      </h2>
       <Swiper
         modules={[Autoplay, EffectFade]}
         autoplay={{
@@ -34,25 +38,25 @@ const Testimonial = () => {
         loop={true}
         spaceBetween={50}
         slidesPerView={1}
-        className="w-8/12 "
+        className="lg:w-8/12 w-10/12  "
       >
         {TestimonialData.map((testament: iTestimony) => {
           return (
-            <SwiperSlide className=" h-[60vh] w-[50%] pt-5 " key={testament.id}>
-              <div className="w-full h-full flex gap-[40px] items-center rounded-[30px] p-[40px] bg-[#1E1D1D] ">
-                <div className="h-full w-[40%] rounded-[20px]">
+            <SwiperSlide className=" h-auto lg:h-[60vh] w-[50%]  lg:pt-5 " key={testament.id}>
+              <div className="w-full h-full flex flex-col lg:flex-row gap-[20px] lg:gap-[40px] lustify-center lg:justify-start  items-center rounded-[30px] p-[10px] lg:p-[40px] bg-[#1E1D1D]  py-[30px] lg:py-0">
+                <div className="h-[300px] lg:h-full w-full lg:w-[40%] rounded-[15px] lg:rounded-[20px]">
                   <img
                     src={testament.image}
                     alt="picture of testimony sharer"
-                    className="h-full w-full object-cover rounded-[20px]"
+                    className="h-full w-full object-cover rounded-[15px] lg:rounded-[20px]"
                   />
                 </div>
-                <div className="w-[60%]">
-                  <h5 className="text-[24px] font-[24px] text-[#F0E0E0] mb-2">
+                <div className="w-full lg:w-[60%] ">
+                  <h5 className="lg:text-[24px] text-[18px] font-[700] text-[#F0E0E0] mb-2">
                     {testament.testimony}
                   </h5>
-                  <p className="paragraph">{testament.author}</p>
-                  <p className="paragraph">{testament.role}</p>
+                  <p className="paragraph text-[#F0E0E0]">{testament.author}</p>
+                  <p className="paragraph text-[#F0E0E0]">{testament.role}</p>
                 </div>
               </div>
             </SwiperSlide>
