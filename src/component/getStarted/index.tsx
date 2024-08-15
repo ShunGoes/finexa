@@ -4,7 +4,7 @@ import "./styles.css";
 
 const GetStarted = () => {
   return (
-    <div className="getStarted ">
+    <div className="getStarted h-auto">
       <div className="getStarted-bg h-full lg:h-full flex flex-col gap-[50px] py-[40px] lg:py-[60px] items-center">
         <div className="lg:w-6/12 text-center">
           <h3 className="heading-2 text-[#FCF7FC] mb-2 lg:mb-0 ">
