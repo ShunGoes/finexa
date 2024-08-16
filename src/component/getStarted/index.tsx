@@ -5,7 +5,7 @@ import "./styles.css";
 const GetStarted = () => {
   return (
     <div className="getStarted h-auto">
-      <div className="getStarted-bg h-full lg:h-full flex flex-col gap-[50px] py-[40px] lg:py-[60px] items-center">
+      <div className="getStarted-bg h-full lg:h-full flex flex-col gap-[50px] pt-[40px] lg:pt-[60px] items-center">
         <div className="lg:w-6/12 text-center">
           <h3 className="heading-2 text-[#FCF7FC] mb-2 lg:mb-0 ">
             How It Works
@@ -159,15 +159,15 @@ const GetStarted = () => {
         {/* Testimonial component */}
 
         {/* connect with us section */}
-        <div className="bg-[#7838884D] px-[20px] w-full h-[50vh] border-4 mb-[5rem]">
-          <div className="w-10/12 lg:mx-auto flex  py-[] h-full items-center">
-          <div className="lg:w-[60%] ">
-            <h3 className="font-[700] text-[26px] text-[#FCF7FC] leading-[40px] ">Connect your account in one click</h3>
-            <p className="paragraph">follow these steps to get strated</p>
-            <button className="bg-[#783888] border border-[#83578E] rounded-[20px] w-[137px] h-[45px] text-[#FFFFFF] text-[16px] flex justify-center items-center mt-4 ">Start Now</button>
+        <div className="bg-[#7838884D]  py-[20px] lg:py-0 px-[20px] w-full h-auto lg:h-[50vh]  ">
+          <div className="w-full lg:w-10/12 lg:mx-auto flex flex-col gap-[40px] lg-gap-0 lg:flex-row   py-[30px] lg:py-0 h-full items-center">
+          <div className="lg:w-[60%] w-full  text-center lg:text-start">
+            <h3 className="heading-3 text-[#FCF7FC] w-10/12 lg:w-full mx-auto lg:mx-0 ">Connect your account in one click</h3>
+            <p className="paragraph text-[#FCF7FC] mb-[4rem] lg:mb-0">follow these steps to get strated</p>
+            <button className="bg-[#783888] border border-[#83578E] rounded-[20px] w-11/12 lg:w-[137px] h-[45px] text-[#FFFFFF] font-[600] text-[16px] outline-none flex justify-center items-center mb-[3rem] lg:mb-0  lg:mt-4 mx-auto lg:mx-0 ">Start Now</button>
           </div>
-          <div className="h-4/5   lg:w-[40%]">
-            <img src={helper.baloon} alt="finexa balloon" className="h-full w-full  object-contain" />
+          <div className="lg:h-4/5  w-full  lg:w-[40%]">
+            <img src={helper.baloon} alt="finexa balloon" className="lg:h-full h-[200px] w-full  object-contain" />
           </div>
 
           </div>

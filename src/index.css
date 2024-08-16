@@ -20,3 +20,6 @@ h1,h2,h3,h4,h5,h6{
   .paragraph{
     @apply font-[400] text-[16px] lg:text-[20px] leading-[22px];
   }
+  .footer-paragraph{
+    @apply font-[500] text-[16px] text-[#D0DAF5]
+  }

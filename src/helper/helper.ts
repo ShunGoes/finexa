@@ -20,8 +20,16 @@ import {default as ColouredArrowLeft} from "../assets/colored-arrow-left.svg"
 import {default as ColouredArrowRight} from "../assets/colored-arrow-right.svg"
 import {default as Hamburger} from "../assets/hamburger.svg"
 import {default as SMAuthourization} from "../assets/sm-authorization.svg"
+import {default as Forward} from "../assets/forward.svg"
+import {default as Twitter} from "../assets/twitter.svg"
+import {default as facebook} from "../assets/facebook.svg"
+import {default as instagram} from "../assets/instagram.svg"
 
 export default {
+    instagram,
+    facebook,
+    Twitter,
+    Forward,
     SMAuthourization,
     Hamburger,
     ColouredArrowRight,
