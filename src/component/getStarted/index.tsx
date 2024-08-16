@@ -88,8 +88,8 @@ const GetStarted = () => {
 
 
         <div className="w-full money-card  lg:py-[30px] ">
-          <div className="lg:w-9/12 border-2 border-red-500 lg:mx-auto h-full">
-            <div className="w-full border-2 flex flex-col lg:flex-row gap-[20px]  lg:h-[400px] lg:gap-[10px] lg:px-0 px-[20px] mb-5">
+          <div className="lg:w-9/12  lg:mx-auto h-full">
+            <div className="w-full  flex flex-col lg:flex-row gap-[20px]  lg:h-[400px] lg:gap-[10px] lg:px-0 px-[20px] mb-5">
               <div className="w-[95%] mx-auto lg:mx-0 lg:w-[40%] ">
                 <img
                   src={helper.MoneyImg}
@@ -97,7 +97,7 @@ const GetStarted = () => {
                   className="h-full object-cover w-full rounded-[15px] lg:rounded-[20px]"
                 />
               </div>
-              <div className="w-full lg:w-[60%] relative">
+              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[60%] relative">
                 <img
                   src={helper.DollarSign}
                   alt="some random pictures of finexa"
@@ -120,7 +120,7 @@ const GetStarted = () => {
               </div>
             </div>
             <div className="w-full flex flex-col lg:flex-row px-[20px] lg:px-0 lg:h-[400px] gap-[20px] lg:gap-[10px] ">
-              <div className="w-full lg:w-[60%] relative ">
+              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[60%] relative ">
                 <img
                   src={helper.PoundSign}
                   alt="some random pictures of finexa"
@@ -141,7 +141,7 @@ const GetStarted = () => {
                   <img src={helper.Money2} alt="h-full lg:h-auto" />
                 </div>
               </div>
-              <div className="w-full lg:w-[40%]  ">
+              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[40%]  ">
                 <img
                   src={helper.SmilingMan}
                   alt="some random pictures of finexa"
