@@ -87,10 +87,10 @@ const GetStarted = () => {
         {/* create account cards end */}
 
 
-        <div className="w-full money-card lg:py-[30px] ">
-          <div className="lg:w-9/12  lg:mx-auto h-full">
-            <div className="w-full flex flex-col lg:flex-row gap-[20px]  lg:h-[400px] lg:gap-[10px] lg:px-0 px-[20px] mb-5">
-              <div className="w-full lg:w-[40%] ">
+        <div className="w-full money-card  lg:py-[30px] ">
+          <div className="lg:w-9/12 border-2 border-red-500 lg:mx-auto h-full">
+            <div className="w-full border-2 flex flex-col lg:flex-row gap-[20px]  lg:h-[400px] lg:gap-[10px] lg:px-0 px-[20px] mb-5">
+              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[40%] ">
                 <img
                   src={helper.MoneyImg}
                   alt="some random pictures of finexa"
