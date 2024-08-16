@@ -2,6 +2,8 @@ import helper from "../../helper/helper";
 import Navbar from "../navbar";
 import "./styles.css";
 
+// import {motion} from "framer-motion"
+
 const Hero = () => {
   return (
     <header className=" header h-auto ">

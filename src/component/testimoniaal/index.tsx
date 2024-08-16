@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide} from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
-// import "swiper/css/autoplay"
 import "swiper/css/effect-fade";
 
 import { TestimonialData } from "../../component-data";
@@ -43,7 +42,7 @@ const Testimonial = () => {
         {TestimonialData.map((testament: iTestimony) => {
           return (
             <SwiperSlide className=" h-auto lg:h-[60vh] w-[50%]  lg:pt-5 " key={testament.id}>
-              <div className="w-full h-full flex flex-col lg:flex-row gap-[20px] lg:gap-[40px] lustify-center  lg:justify-start  items-center rounded-[30px] p-[10px] lg:p-[40px] bg-[#1E1D1D]  py-[30px] lg:py-0">
+              <div className="w-full h-full flex flex-col lg:flex-row gap-[20px] lg:gap-[40px] lustify-center  lg:justify-start  items-center rounded-[30px] px-[20px] lg:p-[40px] bg-[#1E1D1D]  py-[30px] lg:py-0">
                 <div className="h-[300px]  lg:h-4/5 w-full lg:w-[40%] rounded-[15px] lg:rounded-[20px]">
                   <img
                     src={testament.image}
