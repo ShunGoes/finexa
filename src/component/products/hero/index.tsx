@@ -1,4 +1,3 @@
-import helper from "../../../helper/helper"
 import Navbar from "../../navbar"
 
 const ProductHero = () => {
