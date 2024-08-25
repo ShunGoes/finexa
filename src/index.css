@@ -15,11 +15,14 @@ h1,h2,h3,h4,h5,h6{
     @apply font-[700]  text-[26px] lg:text-[50px] leading-[30px] lg:leading-[70px]
   }
   .heading-3{
-    @apply mb-2 lg:mb-0 font-[700] text-[24px] lg:text-[30px] leading-[30px] lg:leading-[70px]
+    @apply mb-2 font-[700] text-[24px] lg:text-[30px] leading-[30px] lg:leading-[30px] lg:mb-[20px]
   }
   .paragraph{
     @apply font-[400] text-[16px] lg:text-[20px] leading-[22px];
   }
   .footer-paragraph{
     @apply font-[500] text-[16px] text-[#D0DAF5]
+  }
+  .btn{
+    @apply border border-[#83578E] px-[40px] h-[40px] text-[16px] font-[600] rounded-[20px] flex items-center justify-center
   }

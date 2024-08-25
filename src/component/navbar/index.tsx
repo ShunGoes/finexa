@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="  w-full py-[40px] LG:py-[20px] flex items-center justify-center ">
       <div className="flex items-center justify-between lg:w-11/12 w-full px-[20px] lg:px-[0px]  h-full">
         <div className="w-full lg:w-[20%] h-full flex gap-4 lg:gap-2 items-center cursor-pointer">
-          <div className="lg:h-[60px] h-[50px]">
+          <div className="lg:h-[40px] h-[50px]">
             <img
               src={helper.Finexa}
               alt="finexa logo"

@@ -24,8 +24,20 @@ import {default as Forward} from "../assets/forward.svg"
 import {default as Twitter} from "../assets/twitter.svg"
 import {default as facebook} from "../assets/facebook.svg"
 import {default as instagram} from "../assets/instagram.svg"
+import {default as ArrowTopRifght} from "../assets/arrow-top-right.svg"
+import {default as Product1} from "../assets/product-1.svg"
+import {default as Product2} from "../assets/product-2.svg"
+import {default as Product3} from "../assets/product-3.svg"
+import {default as Product4} from "../assets/product-4.svg"
+import {default as Product5} from "../assets/product-5.svg"
 
 export default {
+    Product1,
+    Product2,
+    Product3,
+    Product4,
+    Product5,
+    ArrowTopRifght,
     instagram,
     facebook,
     Twitter,

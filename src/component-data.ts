@@ -31,3 +31,42 @@ export const TestimonialData :iTestimony[] = [
         role: "Freelance Designer",
     },
 ]
+
+export const ProductData: iProductCard[] = [
+    {
+        id: 0,
+        image: helper.Product1,
+        text: "Create secure, customizable virtual cards for online transactions.",
+        title: "Virtual Cards"
+    },
+    {
+        id: 1,
+        image: helper.Product2,
+        text: "Create secure, Seamlessly exchange currencies at competitive rates with no hidden fees. ",
+        title: "Currency Exchange"
+    },
+    {
+        id: 2,
+        image: helper.Product2,
+        text: "Monitor your spending in real-time to stay on top of your finances.",
+        title: " Expense Tracking"
+    },
+    {
+        id: 3,
+        image: helper.Product3,
+        text: "Pay bills effortlessly with our integrated payment system.",
+        title: "Bill Payments"
+    },
+    {
+        id: 4,
+        image: helper.Product4,
+        text: "Set up and manage savings goals with automated contributions.",
+        title: "Savings Plans"
+    },
+    {
+        id: 5,
+        image: helper.Product5,
+        text: "Explore smart investment options to grow your wealth.",
+        title: "Investment Tools"
+    },
+]
