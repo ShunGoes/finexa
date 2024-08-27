@@ -9,7 +9,7 @@ const ProductCard = ({image,text,title}: iProductCard) => {
         </div>
         <div className="h-[150px]  flex items-center justify-between bg-[#1A19194D] py-[20px] px-[10px]">
             <div className="h-full w-[70%]">
-                <p className="font-[500] lg:text-[20px] lg:leading-[36px] lg:text-[#FCF7FC] ">{title}</p>
+                <h4 className="font-[500] lg:text-[20px] lg:leading-[36px] lg:text-[#FCF7FC] ">{title}</h4>
                 <p className="font-[400] text-[14px] text-[#FCF7FC] ">
                 {text} 
                 </p>

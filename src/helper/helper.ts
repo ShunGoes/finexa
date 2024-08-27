@@ -30,8 +30,22 @@ import {default as Product2} from "../assets/product-2.svg"
 import {default as Product3} from "../assets/product-3.svg"
 import {default as Product4} from "../assets/product-4.svg"
 import {default as Product5} from "../assets/product-5.svg"
+import {default as Solution1} from "../assets/solution1.svg"
+import {default as Solution2} from "../assets/solution2.svg"
+import {default as Solution3} from "../assets/solution3.svg"
+import {default as Solution4} from "../assets/solution4.svg"
+import {default as Solution5} from "../assets/solutin5.svg"
+import {default as Solution6} from "../assets/solution6.svg"
+import {default as ProductStarted} from "../assets/started-pics.svg"
 
 export default {
+    ProductStarted,
+    Solution1,
+    Solution2,
+    Solution3,
+    Solution4,
+    Solution5,
+    Solution6,
     Product1,
     Product2,
     Product3,

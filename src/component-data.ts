@@ -70,3 +70,41 @@ export const ProductData: iProductCard[] = [
         title: "Investment Tools"
     },
 ]
+export const SolutionData: iProductCard[] = [
+    {
+        id: 0,
+        image: helper.Solution1,
+        text: "Keep your finances organized and stress-free with tools that let you track spending, manage budgets, and stay in control.",
+        title: "Simplified Financial Management"
+    },
+    {
+        id: 1,
+        image: helper.Solution2,
+        text: "Enjoy smooth, secure payments and currency exchanges with no hidden fees, ensuring your money works exactly the way you need it to. ",
+        title: " Seamless Transactions"
+    },
+    {
+        id: 2,
+        image: helper.Solution3,
+        text: "Enjoy smooth, secure payments and currency exchanges with no hidden fees, ensuring your money works exactly the way you need it to..",
+        title: " Seamless Transactions"
+    },
+    {
+        id: 3,
+        image: helper.Solution4,
+        text: "Set up virtual cards, automate bill payments, and manage savings goals. all with the security and flexibility to fit your lifestyle.",
+        title: "Secure and Flexible Payments"
+    },
+    {
+        id: 4,
+        image: helper.Solution5,
+        text: "Grow your wealth with investment tools that give you access to diversified options and real-time insights for smarter financial decisions..",
+        title: " Integrated Solutions"
+    },
+    {
+        id: 5,
+        image: helper.Solution6,
+        text: "Get a clear overview of your financial health. Our tools provide detailed reports, personalized recommendations.",
+        title: "Comprehensive Financial Insights"
+    },
+]
