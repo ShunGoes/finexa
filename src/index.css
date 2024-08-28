@@ -11,11 +11,17 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Inter", sans-serif;
   }
 
+  .heading-1{
+    @apply font-[700] lg:text-[64px] text-[36px] text-center text-[#FCF7FC] leading-[40px] lg:leading-[70px] mb-[5px] lg:mb-0
+  }
   .heading-2{
     @apply font-[700]  text-[26px] lg:text-[50px] leading-[30px] lg:leading-[70px]
   }
   .heading-3{
     @apply mb-2 font-[700] text-[24px] lg:text-[30px] leading-[30px] lg:leading-[30px] lg:mb-[20px]
+  }
+  .header-paragraph{
+    @apply text-[#FFFFFF] mt-2 text-center  lg:w-[90%] lg:font-[400] text-[14px] lg:text-[16px] leading-[16.94px] lg:leading-[19.36px] mb-[2rem] lg:mb-0
   }
   .paragraph{
     @apply font-[400] text-[16px] lg:text-[20px] leading-[22px];

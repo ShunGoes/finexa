@@ -17,11 +17,11 @@ const Hero = () => {
              transition={{ duration: 1.5, delay: 1 }}
             className="lg:w-9/12 lg:mx-auto  flex flex-col items-center px-[20px] lg:px-0 ">
             <div className="lg:w-11/12  ">
-              <h1 className="font-[700] lg:text-[64px] text-[36px] text-center text-[#FCF7FC] leading-[40px] lg:leading-[70px] mb-[5px] lg:mb-0">
+              <h1 className="heading-1">
                 Finexa All Your Financial Needs In One Place
               </h1>
             </div>
-            <p className="text-[#FFFFFF] mt-2 text-center w-10/12 lg:w-[90%] lg:font-[400] text-[14px] lg:text-[16px] leading-[16.94px] lg:leading-[19.36px] mb-[2rem] lg:mb-0">
+            <p className="header-paragraph w-10/12">
               Discover a smarter way to manage, invest, and grow your wealth
               with Finexa. Our intuitive platform offers personalized insights,
               actionable advice, and cutting-edge tools to help you take control
