@@ -37,8 +37,10 @@ import {default as Solution4} from "../assets/solution4.svg"
 import {default as Solution5} from "../assets/solutin5.svg"
 import {default as Solution6} from "../assets/solution6.svg"
 import {default as ProductStarted} from "../assets/started-pics.svg"
+import {default as SmProductStarted} from "../assets/sterted-sm.svg"
 
 export default {
+    SmProductStarted,
     ProductStarted,
     Solution1,
     Solution2,

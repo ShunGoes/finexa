@@ -1,9 +1,8 @@
-
-.get-started-bg{
+.solution-bg{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.9));
 }
 @media screen and (min-width: 1024px){
-    .get-started-bg{
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+    .solution-bg{
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7))
     }
 }

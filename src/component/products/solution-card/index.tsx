@@ -9,7 +9,7 @@ const SolutionCard = ({image, title, text}: iProductCard) => {
     </div>
     <div className="h-[150px]  w-[95%]  py-[20px]">
         <div className="h-full w-full">
-            <h4 className="font-[500] lg:text-[20px] lg:leading-[30px] lg:text-[#FCF7FC] mb-[10px] ">{title}</h4>
+            <h4 className="product-card lg:leading-[30px]  mb-[10px] ">{title}</h4>
             <p className="font-[400] text-[14px] text-[#FCF7FC] ">
             {text} 
             </p>
