@@ -1,9 +1,18 @@
+import { useRef } from "react";
 import helper from "../../helper/helper";
 import "./styles.css";
 
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Transaction = () => {
+  const imageRef = useRef(null)
+const {scrollYProgress} = useScroll({
+  target: imageRef,
+  offset: ["start end", "end start"]
+})
+const translateY = useTransform(scrollYProgress, [0,1], [200, -100])
+// const opacity = useTransform(scrollYProgress, [0,1], [1, 0.8])
+
   return (
     <div className="transaction  h-auto">
       <div className="transaction-bg h-full lg:py-[70px]">
@@ -29,13 +38,16 @@ const Transaction = () => {
               className="h-[30px] lg:h-auto"
             />
           </div>
-          <div className="mt-[70px] lg:mt-[40px] w-10/12 lg:w-auto">
+          <motion.div
+            ref={imageRef}
+            style={{translateY}}
+            className="mt-[70px] lg:mt-[40px] w-10/12 lg:w-auto">
             <img
               src={helper.MobileApp}
               alt="finexa mobile app"
               className="lg:h-[600px]"
             />
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>

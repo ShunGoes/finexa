@@ -1,10 +1,73 @@
 import helper from "../../helper/helper";
 import Testimonial from "../testimoniaal";
 import "./styles.css";
+import { HowItWorks } from "../../component-data";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
-import { motion } from "framer-motion";
+
+
 
 const GetStarted = () => {
+  const imageRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+
+  const scrollYProgress1 = useScroll({
+    target: imageRefs[0],
+    offset: ["start end", "end start"]
+  }).scrollYProgress;
+
+  const scrollYProgress2 = useScroll({
+    target: imageRefs[1],
+    offset: ["start end", "end start"]
+  }).scrollYProgress;
+
+  const scrollYProgress3 = useScroll({
+    target: imageRefs[2],
+    offset: ["start end", "end start"]
+  }).scrollYProgress;
+
+  const scrollYProgress4 = useScroll({
+    target: imageRefs[3],
+    offset: ["start end", "end start"]
+  }).scrollYProgress;
+
+  // Example transformations (you can customize these)
+  const translateY1 = useTransform(scrollYProgress1, [0, 1], [100, -100]);
+  const translateY2 = useTransform(scrollYProgress2, [0, 1], [200, -200]);
+  const translateY3 = useTransform(scrollYProgress3, [0, 1], [50, -200]);
+  const translateY4 = useTransform(scrollYProgress4, [0, 1], [50, -300]);
+  // const opacity = useTransform(scrollYProgress, [0,1], [1, 0.8])
+
+  const cardVariants = {
+    offscreen: {
+      y: 300,
+      opacity: 0
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        duration: 1
+      }
+    }
+  };
+  const textVariants = {
+    offscreen: {
+      y: 300,
+      opacity: 0
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        duration: 0.8
+      }
+    }
+  };
   const containerVariant = {
     visible: {
       opacity: 1,
@@ -52,96 +115,75 @@ const GetStarted = () => {
           viewport={{once: true}}
           className=" w-10/12 flex flex-col gap-[20px]"
         >
+          {
+            HowItWorks.map((obj: iHowItWorks) => {
+              return(
           <motion.div
             variants={childVariants}
             className="card-container w-full border flex gap-[30px] lg:gap-0 flex-col lg:flex-row justify-between items-center py-[30px] px-[20px] rounded-[30px]  border-[#783888]"
           >
-            <div className="card-text w-full text-center lg:text-start lg:w-[50%]">
-              <h3 className=" text-[#FCF7FC] heading-3 ">Create an account</h3>
+            <motion.div 
+              initial="offscreen"
+              whileInView="onscreen"
+              variants={textVariants}
+              viewport={{ once: true}}
+              className="card-text w-full text-center lg:text-start lg:w-[50%]">
+              <h3 className=" text-[#FCF7FC] heading-3 ">{obj.title}</h3>
               <p className="text-[#FCF7FC] paragraph ">
-                Enter your email address and create a strong password.
-                Alternatively, sign up using your social media accounts for
-                faster access
+                {obj.text}
               </p>
-            </div>
-            <div className=" h-full ">
-              <div className="h-3/5 ">
+            </motion.div>
+            <motion.div
+              initial="offscreen"
+              whileInView="onscreen"
+              variants={cardVariants}
+              viewport={{ once: true}}
+              className=" h-full ">
+              <div 
+                
+                className="h-3/5 ">
                 <img
-                  src={helper.AuthorizationCode}
+                 
+                  src={obj.imageSrcLarge}
                   alt=" picture of an authorization code"
-                  className="h-[120px] hidden lg:block"
+                  className="h-[120px] hidden lg:block  "
                 />
                 <img
-                  src={helper.SMAuthourization}
+                 
+                  src={obj.imageSmall}
                   alt=" picture of an authorization code"
-                  className="h-[100px] lg:hidden"
+                  className="h-[100px] lg:hidden "
                 />
               </div>
-            </div>
+            </motion.div>
           </motion.div>
-          <motion.div
-            variants={childVariants}
-            className="card-container w-full border flex gap-[30px] lg:gap-0  flex-col lg:flex-row justify-between items-center py-[30px] px-[20px] rounded-[30px]  border-[#783888]"
-          >
-            <div className="card-text w-full text-center lg:text-start lg:w-[50%]">
-              <h3 className="text-[#FCF7FC] heading-3 ">Verify Your Email</h3>
-              <p className="text-[#FCF7FC] paragraph">
-                Check your inbox for a verification email and click the link to
-                confirm your account. This step ensures your account’s security
-              </p>
-            </div>
-            <div className=" h-full">
-              <div className="h-3/5 ">
-                <img
-                  src={helper.Email}
-                  alt=" picture of an Email Icon"
-                  className="h-[100px]"
-                />
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={childVariants}
-            className="card-container w-full border flex gap-[40px] lg:gap-0  flex-col lg:flex-row justify-between items-center py-[30px] px-[20px] rounded-[30px]  border-[#783888]"
-          >
-            <div className="card-text w-full text-center lg:text-start lg:w-[50%]">
-              <h3 className="text-[#FCF7FC] heading-3">
-                Create Your Bank Account & Debit Card
-              </h3>
-              <p className="text-[#FCF7FC] paragraph ">
-                Complete your profile by adding basic details and preferences.
-                You're now ready to explore and start using Finexa's features
-              </p>
-            </div>
-            <div className=" h-full">
-              <div className="h-3/5 ">
-                <img
-                  src={helper.DebitCard}
-                  alt=" picture of an authorization code"
-                  className="h-[100px]"
-                />
-              </div>
-            </div>
-          </motion.div>
+
+              )
+            })
+          }
+          
         </motion.div>
         {/* create account cards end */}
 
         <div className="w-full money-card  lg:py-[30px] ">
           <div className="lg:w-9/12  lg:mx-auto h-full">
-            <motion.div
-              initial={{opacity: 0, y: 100}}
-              whileInView={{opacity: 1, y: 0}}
-              transition={{delay:0.5, duration: 1}}
-              viewport={{once: true}}
+            <div
+              
               className="w-full  flex flex-col lg:flex-row gap-[20px]  lg:h-[400px] lg:gap-[10px] lg:px-0 px-[20px] mb-5">
-              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[40%] ">
+              <motion.div 
+                ref={imageRefs[0]}
+                style={{translateY:translateY1}}
+                className="w-[95%] mx-auto lg:mx-0 lg:w-[40%] ">
                 <img
                   src={helper.MoneyImg}
                   alt="some random pictures of finexa"
                   className="h-full object-cover w-full rounded-[15px] lg:rounded-[20px]"
                 />
-              </div>
-              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[60%] relative">
+              </motion.div>
+              <motion.div
+                ref={imageRefs[1]}
+                style={{translateY: translateY2}}
+                className="w-[95%] mx-auto lg:mx-0 lg:w-[60%] relative ">
                 <img
                   src={helper.DollarSign}
                   alt="some random pictures of finexa"
@@ -161,15 +203,15 @@ const GetStarted = () => {
                 <div className="absolute top-0 flex justify-end  w-full p-[10px] h-[70px]">
                   <img src={helper.Money1} alt=" h-full lg:h-auto" />
                 </div>
-              </div>
-            </motion.div>
-            <motion.div
-            initial={{opacity: 0, y: 100}}
-            whileInView={{opacity: 1, y: 0}}
-            transition={{delay:0.5, duration: 1}}
-            viewport={{once: true}}
+              </motion.div>
+            </div>
+            <div
+            
             className="w-full flex flex-col lg:flex-row px-[20px] lg:px-0 lg:h-[400px] gap-[20px] lg:gap-[10px] ">
-              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[60%] relative ">
+              <motion.div 
+              ref={imageRefs[2]}
+              style={{translateY: translateY3}}
+              className="w-[95%] mx-auto lg:mx-0 lg:w-[60%] relative ">
                 <img
                   src={helper.PoundSign}
                   alt="some random pictures of finexa"
@@ -189,15 +231,18 @@ const GetStarted = () => {
                 <div className="absolute top-0 flex justify-end w-full p-[10px] h-[70px] ">
                   <img src={helper.Money2} alt="h-full lg:h-auto" />
                 </div>
-              </div>
-              <div className="w-[95%] mx-auto lg:mx-0 lg:w-[40%]  ">
+              </motion.div>
+              <motion.div 
+              ref={imageRefs[3]}
+              style={{translateY: translateY4}}
+              className="w-[95%] mx-auto lg:mx-0 lg:w-[40%]  ">
                 <img
                   src={helper.SmilingMan}
                   alt="some random pictures of finexa"
                   className="h-full object-cover w-full rounded-[15px] lg:rounded-[20px]"
                 />
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
 

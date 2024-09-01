@@ -15,3 +15,10 @@ interface iProductCard {
     text: string,
     title: string,
 }
+interface iHowItWorks {
+    id: number;
+    title: string;
+    text: string;
+    imageSrcLarge: string;
+    imageSmall: string;
+}

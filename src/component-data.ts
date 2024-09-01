@@ -108,3 +108,26 @@ export const SolutionData: iProductCard[] = [
         title: "Comprehensive Financial Insights"
     },
 ]
+export const HowItWorks: iHowItWorks[] = [
+    {
+        id: 0,
+        title: "Create an account",
+        text: "Enter your email address and create a strong password.Alternatively, sign up using your social media accounts forfaster access",
+        imageSrcLarge: helper.AuthorizationCode,
+        imageSmall: helper.SMAuthourization
+    },
+    {
+        id: 1,
+        title: "Verify Your Email",
+        text: "Check your inbox for a verification email and click the link toconfirm your account. This step ensures your account’s security",
+        imageSrcLarge: helper.Email,
+        imageSmall: helper.Email
+    },
+    {
+        id: 2,
+        title: "Create Your Bank Account & Debit Card",
+        text: " Complete your profile by adding basic details and preferences.You're now ready to explore and start using Finexa's features",
+        imageSrcLarge: helper.DebitCard,
+        imageSmall: helper.DebitCard,
+    },
+]
