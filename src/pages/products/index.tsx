@@ -1,4 +1,5 @@
 import Footer from "../../component/footer"
+import Finance from "../../component/products/finance"
 import GetStarted from "../../component/products/get-started"
 import ProductHero from "../../component/products/hero"
 import AllProducts from "../../component/products/product-card-container"
@@ -11,6 +12,7 @@ const Products = () => {
         <AllProducts/>
         <Solutions />
         <GetStarted />
+        <Finance />
         <Footer/>
     </section>
   )

@@ -38,8 +38,22 @@ import {default as Solution5} from "../assets/solutin5.svg"
 import {default as Solution6} from "../assets/solution6.svg"
 import {default as ProductStarted} from "../assets/started-pics.svg"
 import {default as SmProductStarted} from "../assets/sterted-sm.svg"
+import {default as ClientHeroPics} from "../assets/client-hero-pics.svg"
+import {default as Client1} from "../assets/client-1.svg"
+import {default as Client2} from "../assets/client-2.svg"
+import {default as Client3} from "../assets/client-3.svg"
+import {default as Client4} from "../assets/client-4.svg"
+import {default as CurvedArrow1} from "../assets/curved-arrow1.svg"
+import {default as CurvedArrow2} from "../assets/curved-arrow2.svg"
 
 export default {
+    CurvedArrow2,
+    CurvedArrow1,
+    Client1,
+    Client2,
+    Client3,
+    Client4,
+    ClientHeroPics,
     SmProductStarted,
     ProductStarted,
     Solution1,

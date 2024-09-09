@@ -131,3 +131,80 @@ export const HowItWorks: iHowItWorks[] = [
         imageSmall: helper.DebitCard,
     },
 ]
+export const ClientTestimonial: iProductCard[]  = [
+    {
+        id: 0,
+        image: helper.Client1,
+        title: "Jennifer Lawerence",
+        subTitle: "CFO at GlobalTech Solutions",
+        text: "What Our ClieFinexa’s platform has completely transformed the way we manage our financial operations. The user-friendly tools and insightful reports have helped us make better decisions and save costs. We’re thrilled with the resultsnts Say about  us",
+    },
+    {
+        id: 1,
+        image: helper.Client2,
+        title: "John Smith",
+        subTitle: "Manager at TradeWave",
+        text: "We needed a solution that was both comprehensive and easy to use. Finexa delivered beyond our expectations, making it simple for our team to handle currency exchanges and manage expenses seamlessly.",
+    },
+    {
+        id: 2,
+        image: helper.Client3,
+        title: "Emily Rogers",
+        subTitle: "Founder at Fresh start",
+        text: "The personalized approach Finexa offers is unmatched. Their tools allowed us to customize our financial strategies, leading to significant improvements in our financial health. I highly recommend them.",
+    },
+    {
+        id: 3,
+        image: helper.Client4,
+        title: "Mark Thompson",
+        subTitle: "CEO of NextGen Retail",
+        text: "Finexa’s integration into our business was smooth and effortless. The ability to manage everything from virtual cards to payments in one place has been a game-changer for us",
+    },
+]
+
+export const ResultCard: iResultItems[] = [
+    {
+        id: 6,
+        title: "Finance",
+        text: "Empowering financial institutions with innovative tools for secure transactions, precise budgeting, and sustainable growth. From virtual cards to seamless currency exchange, we provide solutions that enhance efficiency and compliance.",
+        hasEdge: true,
+        hasBorder: false
+        
+    },
+    {
+        id: 1,
+        title: "Finance",
+        text: "Empowering financial institutions with innovative tools for secure transactions, precise budgeting, and sustainable growth. From virtual cards to seamless currency exchange, we provide solutions that enhance efficiency and compliance.",
+        hasEdge: false,
+        hasBorder: true
+    },
+    {
+        id: 2,
+        title: "Finance",
+        text: "Empowering financial institutions with innovative tools for secure transactions, precise budgeting, and sustainable growth. From virtual cards to seamless currency exchange, we provide solutions that enhance efficiency and compliance.",
+        hasEdge: false,
+        hasBorder: false
+    },
+    {
+        id: 3,
+        title: "Finance",
+        text: "Empowering financial institutions with innovative tools for secure transactions, precise budgeting, and sustainable growth. From virtual cards to seamless currency exchange, we provide solutions that enhance efficiency and compliance.",
+        hasEdge: true,
+        hasBorder: false
+    },
+    {
+        id: 4,
+        title: "Finance",
+        text: "Empowering financial institutions with innovative tools for secure transactions, precise budgeting, and sustainable growth. From virtual cards to seamless currency exchange, we provide solutions that enhance efficiency and compliance.",
+        hasEdge: false,
+        hasBorder: true
+    },
+    {
+        id: 5,
+        title: "Finance",
+        text: "Empowering financial institutions with innovative tools for secure transactions, precise budgeting, and sustainable growth. From virtual cards to seamless currency exchange, we provide solutions that enhance efficiency and compliance.",
+        hasEdge: false,
+        hasBorder: false
+    },
+    
+]

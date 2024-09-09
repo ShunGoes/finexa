@@ -14,6 +14,7 @@ interface iProductCard {
     id: number,
     text: string,
     title: string,
+    subTitle? : string
 }
 interface iHowItWorks {
     id: number;
@@ -21,4 +22,11 @@ interface iHowItWorks {
     text: string;
     imageSrcLarge: string;
     imageSmall: string;
+}
+interface iResultItems {
+    id: number,
+    title: string,
+    text: string
+    hasEdge: boolean,
+    hasBorder: boolean
 }

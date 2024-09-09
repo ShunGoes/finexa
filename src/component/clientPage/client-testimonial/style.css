@@ -1,0 +1,22 @@
+.testimonial-bg{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.9)); 
+}
+
+.testimonial::-webkit-scrollbar{
+    /* color: #300D2B; */
+    /* width: 10px; */
+    height: 10px;
+    display: block;
+}
+
+.testimonial::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 10px;
+  }
+
+  .testimonial::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7)); /* Color of the thumb */
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+  }
