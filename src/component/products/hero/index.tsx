@@ -1,11 +1,18 @@
 import Navbar from "../../navbar"
+import { motion } from "framer-motion"
+
 
 const ProductHero = () => {
   return (
     <header className=" header h-auto ">
       <div className="header-bg  flex flex-col justify- ">
         <Navbar />
-        <div className="w-full lg:mt-[50px] mt-[3rem] ">
+        <motion.div
+        initial={{opacity: 0, y:100}}
+        animate={{opacity: 1, y: 0 }}
+        transition={{delay: 1, duration: 1}}
+        viewport={{ once: true }} 
+        className="w-full lg:mt-[50px] mt-[3rem] ">
           <div className="lg:w-9/12 lg:mx-auto  flex flex-col items-center px-[20px] lg:px-0 ">
           <div className="lg:w-11/12  ">
             <h1 className="heading-1">
@@ -20,7 +27,7 @@ const ProductHero = () => {
               <button className="btn bg-transparent text-[#783888]">View products</button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </header>
   )

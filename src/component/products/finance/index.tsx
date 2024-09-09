@@ -15,7 +15,7 @@ const Finance = () => {
         <motion.p
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 2, delay: 0.5 }}
+          transition={{ duration: 1, delay: 1, type: "spring", bounce: 0.5 }}
           className="paragraph text-white text-center mx-auto w-10/12"
         >
           Join thousands of users who trust Finexa to manage their money smarter

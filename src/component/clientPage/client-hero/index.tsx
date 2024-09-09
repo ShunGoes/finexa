@@ -1,14 +1,19 @@
 import helper from "../../../helper/helper";
 import Navbar from "../../navbar";
 import ClientTestimonial from "../client-testimonial";
-
+import { motion } from "framer-motion";
 const ClientHero = () => {
   return (
     <div className="">
       <header className=" header h-auto ">
         <div className="header-bg  flex flex-col justify- ">
           <Navbar />
-          <div className="w-full lg:mt-[50px] mt-[3rem] ">
+          <motion.div
+          initial={{opacity: 0, y:100}}
+          animate={{opacity: 1, y: 0 }}
+          transition={{delay: 1, duration: 1}}
+          viewport={{ once: true }} 
+          className="w-full lg:mt-[50px] mt-[3rem] ">
             <div className="lg:w-11/12 lg:mx-auto   flex flex-col items-center lg:px-0 ">
               <div className="lg:w-9/12  w-full  ">
                 <h1 className="text-[28px] lg:text-[64px] lg:leading-[70px] font-[700] leading-[40px] text-[#FCF7FC] text-center">
@@ -28,7 +33,7 @@ const ClientHero = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
             <section className="mt-[60px] lg:mt-[40px]">
                 <ClientTestimonial />
             </section>

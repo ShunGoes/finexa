@@ -12,9 +12,10 @@ const Hero = () => {
         <Navbar />
         <div className="w-full lg:mt-[50px] mt-[2rem] ">
           <motion.div
-             initial={{ opacity: 0, y: 100 }}
-             animate={{ opacity: 1, y: [0, 70, 0, 50,0,25,0,15,0,7,0] }}
-             transition={{ duration: 1.5, delay: 1 }}
+            initial={{opacity: 0, y:100}}
+            animate={{opacity: 1, y: 0 }}
+            transition={{delay: 1, duration: 1}}
+            viewport={{ once: true }} 
             className="lg:w-9/12 lg:mx-auto  flex flex-col items-center px-[20px] lg:px-0 ">
             <div className="lg:w-11/12  ">
               <h1 className="heading-1">
@@ -39,14 +40,10 @@ const Hero = () => {
                 className="h-full"
               />
             </div>
-            <motion.div 
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1, }}
-                transition={{delay: 0.5, duration: 2}}
-                viewport={{ once: true }}  
+            <div   
               className="h-[120px] lg:h-auto">
               <img src={helper.PayCards} alt="pay cards" className="h-full " />
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
