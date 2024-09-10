@@ -10,7 +10,7 @@ const GetStarted = () => {
     target: ref,
     offset: ["start end", "end start"]
   })
-  const translateY = useTransform(scrollYProgress, [0,1], [300,0])
+  const translateY = useTransform(scrollYProgress, [0,1], [100,0])
   const opacity = useTransform(scrollYProgress, [0,1], [0.7,1])
 
 

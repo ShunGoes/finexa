@@ -45,8 +45,10 @@ import {default as Client3} from "../assets/client-3.svg"
 import {default as Client4} from "../assets/client-4.svg"
 import {default as CurvedArrow1} from "../assets/curved-arrow1.svg"
 import {default as CurvedArrow2} from "../assets/curved-arrow2.svg"
+import {default as Testimonial2} from "../assets/testimonial2.svg"
 
 export default {
+    Testimonial2,
     CurvedArrow2,
     CurvedArrow1,
     Client1,

@@ -10,26 +10,20 @@ export const TestimonialData :iTestimony[] = [
     },
     
     {
-        image: helper.Testimonial1,
-        id: 1,
-        testimony: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero vero reiciendis doloremque, ipsam porro suscipit ipsa ab magni repudiandae odit.",
-        author: "Sarah L.",
-        role: "Freelance Designer",
-    },
-    {
         image: helper.SmilingMan,
-        id: 2,
-        testimony: " I love how simple and secure it is to exchange currencies. Finexa has truly streamlined my international transactions.",
-        author: "Sarah L.",
-        role: "Freelance Designer",
+        id: 1,
+        testimony: " The real-time transaction tracking keeps me on top of my finances. Finexa’s platform is user-friendly and reliable.",
+        author: "Micheal B.",
+        role: "Entrepreneur",
     },
     {
-        image: helper.MoneyImg,
-        id: 3,
-        testimony: " lorem copium kkdnnnf wieieioeobf svfjj. Finexa has truly streamlined my international transactions.",
-        author: "Sarah L.",
-        role: "Freelance Designer",
+        image: helper.Testimonial2,
+        id: 2,
+        testimony: " Finexa made managing my business finances so much easier. The virtual card feature is a game-changer!",
+        author: "John D..",
+        role: " Small Business Owner",
     },
+   
 ]
 
 export const ProductData: iProductCard[] = [
@@ -164,7 +158,7 @@ export const ClientTestimonial: iProductCard[]  = [
 
 export const ResultCard: iResultItems[] = [
     {
-        id: 6,
+        id: 0,
         title: "Finance",
         text: "Empowering financial institutions with innovative tools for secure transactions, precise budgeting, and sustainable growth. From virtual cards to seamless currency exchange, we provide solutions that enhance efficiency and compliance.",
         hasEdge: true,

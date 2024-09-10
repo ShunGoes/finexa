@@ -15,7 +15,7 @@
   }
 
   .testimonial::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7)); /* Color of the thumb */
+    background: #783888; /* Color of the thumb */
     border-radius: 10px;
     width: 400px;
     height: 100px;

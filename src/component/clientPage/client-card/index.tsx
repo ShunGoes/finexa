@@ -1,14 +1,23 @@
-const ClientCard = ({ text, image, title, subTitle }: iProductCard) => {
+import { motion } from "framer-motion";
+
+const ClientCard = ({ text, image, title, subTitle, id }: iProductCard) => {
   const backgroundImage = {
     backgroundImage: "linear-gradient(200deg, #783888, #1B1919CC 45%)",
   };
-const background = {background: "rgba(27, 25, 25, 0.5)"}
+  const background = { background: "rgba(27, 25, 25, 0.5)" };
   return (
-    <div
+    <motion.div
+      initial={{opacity: 0, scale: 0}}
+      whileInView={{opacity: 1, scale: 1}}
+      transition={{delay: id * 0.2, duration: 2, type: "spring", bounce: 0.3 }}
+      viewport={{once: true}}
       style={backgroundImage}
       className="w-[93%] md:w-[30%] h-auto  shrink-0    rounded-[10px]  "
     >
-      <div style={background}  className="flex flex-col gap-4  p-5 md:p-0 md:py-5">
+      <div
+        style={background}
+        className="flex flex-col gap-4  p-5 md:p-0 md:py-5"
+      >
         <div className="  h-[70px] flex gap-[10px] md:px-4 md:items-center">
           <div className="w-[30%] md:w-[20%]  h-full md:h-[50px] flex items-center  ">
             <img
@@ -32,7 +41,7 @@ const background = {background: "rgba(27, 25, 25, 0.5)"}
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
